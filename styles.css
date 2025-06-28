@@ -5,7 +5,7 @@
 #container {
     display: flex;
     height: 500px;
-    width: 400px;
+    width: 270px;
     border: 3px solid black;
     border-radius: 8px;
     padding: 10px;
@@ -14,15 +14,26 @@
     flex-direction: column;
 }
 
+#display {
+    font-size: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 #upper-third {
-    width: 123px;
-    height: 20px;
+    width: 235px;
+    height: 100px;
     border: 2px solid black;
 }
 
 #middle-third {
+    width: 350px;
     display: flex;
     gap: 10px;
+}
+
+#middle-third button {
+    padding: 20px;
 }
 
 #buttons-numbers {
@@ -49,5 +60,14 @@
 
 #lower-third {
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+#button-clear {
+    width: 170px;
+}
+
+#lower-third button {
+    padding: 20px;
 }

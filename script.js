@@ -13,6 +13,7 @@ const clearPressed=document.querySelector('#button-clear');
 digitButtonPressed.forEach(button =>{
     button.addEventListener('click', ()=>{
         if (operator==''){
+            display.textContent='0';
             firstNum+=button.textContent;
             display.textContent=firstNum;
             console.log('firstNum'+firstNum);
